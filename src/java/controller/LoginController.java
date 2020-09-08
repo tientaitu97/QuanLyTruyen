@@ -37,7 +37,7 @@ public class LoginController extends HttpServlet{
 //       RequestDispatcher rd = req.getRequestDispatcher("view/login.jsp");
 //       rd.forward(req, resp);
         req.setAttribute("customer",customerservice.findAll());
-        RequestDispatcher rd = req.getRequestDispatcher("view/login.jsp");
+        RequestDispatcher rd = req.getRequestDispatcher("view/customer.jsp");
         rd.forward(req, resp);  
     }
 

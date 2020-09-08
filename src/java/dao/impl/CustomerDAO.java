@@ -27,7 +27,7 @@ public class CustomerDAO implements ICustomerDAO{
             while (rs.next()){
                 Customer customer = new Customer();
                 customer.setId(rs.getInt("id"));
-//                customer.setPoints(rs.getInt("points"));
+                customer.setPoints(rs.getInt("points"));
                 customer.setAge(rs.getInt("age"));
                 customer.setGender(rs.getString("gender"));
                 customer.setName(rs.getString("name"));
